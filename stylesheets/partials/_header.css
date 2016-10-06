@@ -1,0 +1,18 @@
+.site-header {
+    background-color: $blue;
+    color: $white;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+
+    .title {
+        font-size: $title-font;
+        font-family: $header-font;
+        margin: 0;
+    }
+
+    .avatar {
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    title Sap Survey
+    meta(charset="UTF-8")
+    meta(http-equiv="Cache-control" content="no-cache")
+    meta(name="description" content="Sap Survey")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    if config.NODE_ENV == 'production'
+      link(rel="stylesheet" href=cssBundle)
+
+  body
+    #app
+    script(type='text/javascript').
+      window.scConfig = !{JSON.stringify(config)};
+    script(src=jsBundle)

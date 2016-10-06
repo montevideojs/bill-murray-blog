@@ -1,0 +1,18 @@
+@mixin box-shadow($left: 0, $top: 10px, $blur: 19px, $color: $grey, $inset: "") {
+  -webkit-box-shadow: $left $top $blur $color #{$inset};
+  -moz-box-shadow: $left $top $blur $color #{$inset};
+  box-shadow: $left $top $blur $color #{$inset};
+}
+
+.blog-content {
+  padding: 25px;
+
+  .post {
+    @include box-shadow();
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

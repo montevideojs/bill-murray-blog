@@ -1,0 +1,10 @@
+body {
+ margin: 0;
+}
+
+// Modules and Variables
+@import "partials/base";
+
+// Partials
+@import "partials/header";
+@import "partials/post";
